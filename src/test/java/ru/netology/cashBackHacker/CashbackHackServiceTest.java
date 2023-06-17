@@ -9,22 +9,22 @@ public class CashbackHackServiceTest {
     @Test
     public void CashbackLessThousand(){
         CashbackHackService cashback = new CashbackHackService();
-        int actual = cashback.remain(900);
         int expected = 100;
-        assertEquals(actual, expected);
+        int actual = cashback.remain(900);
+        assertEquals(expected, actual);
     }
     @Test
     public void CashbackMoreThousand(){
         CashbackHackService cashback = new CashbackHackService();
-        int actual = cashback.remain(1100);
         int expected = 900;
-        assertEquals(actual, expected);
+        int actual = cashback.remain(1100);
+        assertEquals(expected, actual);
     }
     @Test
     public void CashbackTwoThousand(){
         CashbackHackService cashback = new CashbackHackService();
-        int actual = cashback.remain(1000);
         int expected = 0;
-        assertEquals(actual, expected);
+        int actual = cashback.remain(1000);
+        assertEquals(expected, actual);
     }
 }
