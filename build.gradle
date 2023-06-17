@@ -10,13 +10,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'ru.d-shap:assertions:2.2'
-    implementation 'org.rnorth.visible-assertions:visible-assertions:2.1.2'
-    implementation 'org.toxos.process-assertions:process-assertions-api:0.7.1'
-    implementation 'ru.d-shap:assertions:2.2'
-    testImplementation 'org.testng:testng:7.1.0'
+    testImplementation 'junit:junit:4.13'
 }
 
 test {
-    useTestNG()
+    useJUnit()
 }
